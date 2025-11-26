@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EtamKawin - Platform Digital Terpadu untuk Administrasi & Persiapan Pernikahan dengan Teknologi Blockchain">
+    <meta name="keywords"
+        content="pernikahan, nikah digital, kartu nikah blockchain, ta'aruf, edukasi pranikah, vendor pernikahan">
+    <title>ETAMKAWIN - Transformasi Digital Layanan Pernikahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon - Logo di Tab Browser -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%237B5BA3;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23F4A6D3;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='serif' font-size='55' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3Cpath d='M 30 25 Q 50 15 70 25' stroke='%23FFD700' stroke-width='2' fill='none'/%3E%3Ccircle cx='35' cy='28' r='2' fill='%23FFD700'/%3E%3Ccircle cx='65' cy='28' r='2' fill='%23FFD700'/%3E%3C/svg%3E">
+
+    <!-- Fallback untuk browser lama -->
+    <link rel="alternate icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJCSURBVHgB7ZbPaxNBFMe/M5vdJE2TmqZp0lpt1YpWPHjxoOBBEMGDBy/+Af4HHrx58OJF8A8QvHgQPIgHT4IgCB48CIIgqFhprba1adJs0yTN7iY7OzOzs9lNd7PZTUXwgy+bmZ03n/e+M/MegP/8p1YKwMPHT7C6tgnTsmFZFizLhmVZME0TlmVhc2sLy6vrePjkKe7cuoH+vl78rZUAHD9xEkLZMHQLhmHAsAzouo7l1TUoqoqZuQU8evoM927fxM1r1/C3VgBQLBaxvLqGb9++Q9c1aJoG0zTx/v1HvP34GSsra1hcWsb9e3dx9coV/KkVAIRCISwtLWNhcQmapsE0TSwtLeH1m7f49OkzlldWsbS8jMXFJdy/dw+Xr1zBn1gBgKIoWFldw+LSMnRdh2masG0bX79+w4f5BcwvzGN+YQHz8/OYn59HJpPBhcsXcf78OTSrAEBRFGxs5JBMZZDNZpFMJpFKp5FIJJBIJJBMJJFMJLG+sYFUKoVEIo6x06fx6PETtx+vlQAEAgEEAgH4fD74/X74/X58/DyP1595+P1++Hw++P1+KL4AotEojhwaxtGRo4ce7N37AAYHB9xu/AoA0WgUg4ODGBgYQH9/P/r7+3Bq/DQmz57BxMQEJiYmMDExgaNHjmBoaAjHjh3D6OgojgwfRiwW+30Ah48MY2RkBIcODSEeH0cikUAymUQqlUI6nUY6nUYqlUIqlUIymUQ8Hkc8HkcikUA0GoXf7/91AARBQF9fL3p7ezAwMIA9e/Ziz549iEQi6OnpQSQSQTQaRU9PDyKRCCKRCHp6etDb24ve3l709vYiEon8vgD+1/oJXgDwE8XBdYkAAAAASUVORK5CYII=">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%237B5BA3;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23F4A6D3;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='40' fill='url(%23grad2)'/%3E%3Ctext x='90' y='125' font-family='serif' font-size='100' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3Cpath d='M 50 45 Q 90 25 130 45' stroke='%23FFD700' stroke-width='4' fill='none'/%3E%3Ccircle cx='60' cy='50' r='4' fill='%23FFD700'/%3E%3Ccircle cx='120' cy='50' r='4' fill='%23FFD700'/%3E%3C/svg%3E">
+
+    <style>
+        :root {
+            --primary-purple: #7B5BA3;
+            --rose: #F4A6D3;
+            --gold: #D4AF37;
+            --lavender: #E6D5F0;
+            --soft-white: #FAFAFA;
+            --dark-text: #2C2C2C;
+            --purple-dark: #5A4578;
+            --rose-light: #FFE5F3;
+            --gold-light: #FFF8E1;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            background: var(--soft-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #7B5BA3 0%, #F4A6D3 50%, #87CEEB 100%);
+            overflow: hidden;
+            padding: 2rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(244, 166, 211, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(230, 213, 240, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(212, 175, 55, 0.2) 0%, transparent 50%);
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .floating-ornament {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.15;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-ornament:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-ornament:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-ornament:nth-child(3) {
+            bottom: 15%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .floating-ornament:nth-child(4) {
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .floating-ornament:nth-child(5) {
+            top: 50%;
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        .floating-ornament:nth-child(6) {
+            top: 60%;
+            right: 5%;
+            animation-delay: 5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 900px;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.1em;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 1rem;
+            font-weight: 300;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        .hero-description {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            margin-bottom: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-purple);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-purple);
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5.5rem 2rem;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1.2rem;
+            color: var(--primary-purple);
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 3.5rem;
+            color: var(--dark-text);
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.15s,
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+            line-height: 1.75;
+        }
+
+        .section-subtitle.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.3rem;
+            margin-top: 3rem;
+        }
+
+        .about-card {
+            text-align: center;
+            padding: 2.3rem 2rem;
+            border-radius: 20px;
+            background: linear-gradient(135deg, var(--lavender) 0%, var(--rose-light) 100%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .about-card.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .about-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(123, 91, 163, 0.25);
+        }
+
+        .about-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-card:hover .about-icon {
+            transform: scale(1.15) rotate(3deg);
+        }
+
+        .about-icon svg {
+            transition: var(--transition);
+        }
+
+        .about-card:hover .about-icon svg {
+            filter: drop-shadow(0 4px 8px rgba(123, 91, 163, 0.3));
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            margin-top: 0.5rem;
+            color: var(--primary-purple);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .about-card p {
+            font-size: 0.95rem;
+            color: var(--dark-text);
+            line-height: 1.65;
+            font-weight: 400;
+        }
+
+        /* Features Section */
+        .features {
+            background: linear-gradient(135deg, var(--rose-light) 0%, var(--lavender) 50%, var(--gold-light) 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 25px;
+            padding: 2.8rem 2.5rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+        }
+
+        .feature-card.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-purple), var(--rose));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-18px);
+            box-shadow: 0 22px 56px rgba(123, 91, 163, 0.28);
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.18) translateY(-5px);
+            animation: pulse 1.5s ease infinite;
+        }
+
+        .feature-icon svg {
+            transition: var(--transition);
+            filter: drop-shadow(0 2px 4px rgba(123, 91, 163, 0.15));
+        }
+
+        .feature-card:hover .feature-icon svg {
+            filter: drop-shadow(0 6px 12px rgba(123, 91, 163, 0.35));
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1.18) translateY(-5px);
+            }
+
+            50% {
+                transform: scale(1.22) translateY(-7px);
+            }
+        }
+
+        .feature-card h3 {
+            font-size: 1.55rem;
+            margin-bottom: 1rem;
+            color: var(--primary-purple);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .feature-card p {
+            font-size: 0.96rem;
+            color: var(--dark-text);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* Advantages Section */
+        .advantages {
+            background: white;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.3rem;
+            margin-top: 3rem;
+        }
+
+        .advantage-card {
+            text-align: center;
+            padding: 2.3rem 2rem;
+            border-radius: 20px;
+            border: 2px solid var(--lavender);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .advantage-card.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .advantage-card:hover {
+            background: var(--lavender);
+            border-color: var(--primary-purple);
+            transform: translateY(-12px);
+            box-shadow: 0 16px 32px rgba(123, 91, 163, 0.22);
+        }
+
+        .advantage-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .advantage-card:hover .advantage-icon {
+            transform: scale(1.12) rotate(-2deg);
+        }
+
+        .advantage-icon svg {
+            transition: var(--transition);
+        }
+
+        .advantage-card:hover .advantage-icon svg {
+            filter: drop-shadow(0 4px 8px rgba(123, 91, 163, 0.25));
+        }
+
+        .advantage-card h3 {
+            font-size: 1.32rem;
+            margin-bottom: 0.7rem;
+            margin-top: 0.5rem;
+            color: var(--primary-purple);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .advantage-card p {
+            font-size: 0.92rem;
+            color: var(--dark-text);
+            line-height: 1.65;
+            font-weight: 400;
+        }
+
+        /* Statistics Section */
+        .statistics {
+            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--purple-dark) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .statistics::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 30% 50%, rgba(244, 166, 211, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(212, 175, 55, 0.2) 0%, transparent 50%);
+        }
+
+        .statistics .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .statistics .section-title,
+        .statistics .section-subtitle {
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--rose-light) 0%, var(--gold-light) 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .cta .btn {
+            background: var(--primary-purple);
+            color: white;
+            animation: ctaPulse 2.5s ease infinite;
+        }
+
+        .cta .btn:hover {
+            background: var(--purple-dark);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 36px rgba(123, 91, 163, 0.45);
+            animation: none;
+        }
+
+        @keyframes ctaPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(123, 91, 163, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 15px rgba(123, 91, 163, 0);
+            }
+        }
+
+        .qr-code {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code-placeholder {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--lavender), var(--rose));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--primary-purple);
+            font-weight: 600;
+            border-radius: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--rose);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--rose);
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .social-link svg {
+            transition: var(--transition);
+        }
+
+        .social-link:hover svg {
+            transform: rotate(5deg);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--dark-text);
+            transition: var(--transition);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .modal-close:hover {
+            background: var(--lavender);
+            transform: rotate(90deg);
+        }
+
+        .modal h2 {
+            color: var(--primary-purple);
+            margin-bottom: 1rem;
+        }
+
+        .modal p {
+            line-height: 1.8;
+            color: var(--dark-text);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .hero {
+                min-height: 100vh;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .features-grid,
+            .advantages-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-ornament {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered animation delays for cards */
+        .feature-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .feature-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .feature-card:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .advantage-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .advantage-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .advantage-card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .advantage-card:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .about-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .about-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .about-card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .stat-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .stat-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .stat-card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Wedding Ornaments SVGs replaced for consistency; keep subtle accent with elegant shapes -->
+        <div class="floating-ornament" aria-label="Rose Ornament">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="#E197B4"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="16" cy="16" rx="10" ry="16" fill="#F4A6D3" fill-opacity="0.14" />
+            </svg>
+        </div>
+        <div class="floating-ornament" aria-label="Gold Leaf">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="#D4AF37"
+                stroke-width="2">
+                <path d="M16 2 C 18 10, 26 12, 30 16 C 26 20, 18 22, 16 30" fill="#FFF8E1" fill-opacity="0.13" />
+            </svg>
+        </div>
+        <div class="floating-ornament" aria-label="Lavender Branch">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="#B693CE"
+                stroke-width="2">
+                <ellipse cx="16" cy="16" rx="7" ry="14" fill="#E6D5F0" fill-opacity="0.14" />
+            </svg>
+        </div>
+        <div class="floating-ornament" aria-label="Heart Gold">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="#E197B4"
+                stroke-width="2">
+                <path d="M16 29 S 2 18, 6 9 A7 7 0 0 1 16 8 A7 7 0 0 1 26 9 C 30 18, 16 29, 16 29 Z" fill="#EEDDC7"
+                    fill-opacity="0.12" />
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">ETAMKAWIN</h1>
+            <p class="hero-subtitle">Transformasi Digital Layanan Pernikahan</p>
+            <p class="hero-description">Platform Digital Terpadu untuk Administrasi &amp; Persiapan Pernikahan dengan
+                Teknologi Blockchain yang Aman, Efisien, dan Terpercaya</p>
+
+            <div class="partnership-section">
+                <p class="partnership-label">Bekerja Sama Dengan:</p>
+                <div class="partner-logos">
+                    <div class="partner-logo">
+                        <img src="1.png" alt="Logo BRIDA Kalimantan Timur">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="2.png" alt="Logo Universitas Muhammadiyah Kalimantan Timur">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="3.png" alt="Logo Dukcapil">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="4.png" alt="Logo KUA">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="5.png" alt="Logo Pemprov Kalimantan Timur">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#cta" class="btn btn-primary">Daftar Sekarang</a>
+                <a href="#about" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Tentang EtamKawin</h2>
+            <p class="section-subtitle animate-on-scroll">Platform revolusioner yang mengintegrasikan seluruh ekosistem
+                pernikahan digital - dari pencarian pasangan hingga penerbitan kartu nikah dengan teknologi blockchain
+            </p>
+
+            <div class="about-content">
+                <div class="about-card animate-on-scroll">
+                    <div class="about-icon" aria-label="Security" style="color:#7B5BA3;">
+                        <svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true" stroke="#B693CE" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="7" y="14" width="18" height="12" rx="5" fill="#E6D5F0" stroke="#7B5BA3" />
+                            <path d="M16 20 v3" stroke="#7B5BA3" />
+                            <circle cx="16" cy="20" r="2" fill="#FFFFFF" stroke="#B693CE" />
+                        </svg>
+                    </div>
+                    <h3>Keamanan</h3>
+                    <p>Teknologi blockchain dan enkripsi tingkat tinggi melindungi data pribadi Anda</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-icon" aria-label="Lightning Bolt" style="color:#D4AF37;">
+                        <svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true" stroke="#D4AF37" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="16,4 22,16 17,16 19,28 10,16 14,16 9,4" fill="#FFF8E1" stroke="#D4AF37" />
+                        </svg>
+                    </div>
+                    <h3>Kemudahan</h3>
+                    <p>Interface intuitif dan proses otomatis memudahkan setiap langkah pernikahan</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-icon" aria-label="Trust" style="color:#F4A6D3;">
+                        <svg width="38" height="38" viewBox="0 0 32 32" aria-hidden="true" stroke="#F4A6D3" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="16,8 18,16 26,16 20,20 22,28 16,24 10,28 12,20 6,16 14,16" fill="#F4A6D3"
+                                fill-opacity="0.30" stroke="#E197B4" />
+                        </svg>
+                    </div>
+                    <h3>Kepercayaan</h3>
+                    <p>Terintegrasi dengan Dukcapil dan SIMKAH untuk validitas resmi pemerintah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Fitur Unggulan</h2>
+            <p class="section-subtitle animate-on-scroll">Solusi lengkap untuk perjalanan pernikahan Anda</p>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-feature="taaruf">
+                    <div class="feature-icon" aria-label="Ta'aruf Digital" style="color:#F4A6D3;">
+                        <svg width="48" height="48" viewBox="0 0 32 32" aria-hidden="true" stroke="#E197B4" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="14" r="4" fill="#F4A6D3" stroke="#E197B4" />
+                            <circle cx="21" cy="14" r="4" fill="#F4A6D3" stroke="#E197B4" />
+                            <path d="M5 24c0-4 6-6 11-6s11 2 11 6v2H5v-2z" fill="#FFF8E1" stroke="#E197B4" />
+                            <path d="M14 10c0-2 4-2 4 0" stroke="#B693CE" />
+                        </svg>
+                    </div>
+                    <h3>Ta'aruf Digital</h3>
+                    <p>Platform pencarian pasangan yang aman dengan verifikasi Dukcapil terintegrasi, algoritma matching
+                        cerdas, dan privasi terjamin</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-feature="edukasi">
+                    <div class="feature-icon" aria-label="Edukasi" style="color:#B693CE;">
+                        <svg width="48" height="48" viewBox="0 0 32 32" aria-hidden="true" stroke="#B693CE" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="7" y="8" width="18" height="16" rx="3" fill="#E6D5F0" stroke="#B693CE" />
+                            <path d="M8 12h16" stroke="#E197B4" />
+                            <path d="M8 16h9" stroke="#D4AF37" />
+                            <path d="M8 20h13" stroke="#7B5BA3" />
+                        </svg>
+                    </div>
+                    <h3>Edukasi Pranikah</h3>
+                    <p>Program pelatihan terstruktur 5 modul: literasi finansial, komunikasi, kesehatan, hukum, dan
+                        nilai budaya berbasis evidence-based practice</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-feature="vendor">
+                    <div class="feature-icon" aria-label="Vendor" style="color:#D4AF37;">
+                        <svg width="48" height="48" viewBox="0 0 32 32" aria-hidden="true" stroke="#D4AF37" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="8" y="13" width="16" height="11" rx="3" fill="#FFF8E1" stroke="#D4AF37" />
+                            <rect x="11" y="8" width="10" height="7" rx="2" fill="#FFFAE0" stroke="#B693CE" />
+                            <path d="M13 23v2M19 23v2" stroke="#B693CE" />
+                            <path d="M12 16l-3 4M20 16l3 4" stroke="#E197B4" />
+                        </svg>
+                    </div>
+                    <h3>Vendor Marketplace</h3>
+                    <p>Ekosistem vendor pernikahan terverifikasi dengan booking sistem escrow, review autentik, dan
+                        integrasi pembayaran aman</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-feature="kartu">
+                    <div class="feature-icon" aria-label="Kartu Nikah Digital" style="color:#7B5BA3;">
+                        <svg width="48" height="48" viewBox="0 0 32 32" aria-hidden="true" stroke="#7B5BA3" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="6" y="10" width="20" height="14" rx="4" fill="#E6D5F0" stroke="#7B5BA3" />
+                            <rect x="10" y="16" width="8" height="4" rx="1" fill="#FFF8E1" stroke="#D4AF37" />
+                            <path d="M16 13v2" stroke="#B693CE" />
+                            <circle cx="16" cy="15" r="1.5" fill="#FFF" stroke="#F4A6D3" />
+                        </svg>
+                    </div>
+                    <h3>Kartu Nikah Digital</h3>
+                    <p>Penerbitan otomatis sertifikat pernikahan blockchain dengan QR code verification, tahan lama, dan
+                        diakui secara internasional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Keunggulan Teknologi</h2>
+            <p class="section-subtitle animate-on-scroll">Dibangun dengan standar keamanan dan teknologi terkini</p>
+
+            <div class="advantages-grid">
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-icon" aria-label="Blockchain" style="color:#7B5BA3;">
+                        <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" stroke="#7B5BA3" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="15" width="10" height="7" rx="3" fill="#E6D5F0" stroke="#7B5BA3" />
+                            <rect x="17" y="10" width="10" height="7" rx="3" fill="#EEDDC7" stroke="#D4AF37" />
+                            <path d="M13 15l5-5" stroke="#F4A6D3" />
+                        </svg>
+                    </div>
+                    <h3>Teknologi Blockchain</h3>
+                    <p>Hyperledger Fabric 2.5 untuk keamanan data maksimal dan immutable records</p>
+                </div>
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-icon" aria-label="Integrasi Pemerintah" style="color:#F4A6D3;">
+                        <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" stroke="#E197B4" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="16" cy="16" r="12" fill="#F4A6D3" stroke="#E197B4" />
+                            <path d="M8 21h16M10 17h12M12 11v6M16 8v9M20 11v6" stroke="#7B5BA3" />
+                        </svg>
+                    </div>
+                    <h3>Integrasi Pemerintah</h3>
+                    <p>Connected dengan Dukcapil dan SIMKAH - 34 KUA se-Kalimantan Timur terintegrasi</p>
+                </div>
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-icon" aria-label="Uptime" style="color:#D4AF37;">
+                        <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" stroke="#D4AF37" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="16,6 20,18 14,18 18,26 10,16 14,16 10,6" fill="#FFF8E1" stroke="#D4AF37" />
+                        </svg>
+                    </div>
+                    <h3>Uptime 99%</h3>
+                    <p>Cloud infrastructure dengan response time &lt; 3 detik dan concurrent users hingga 10.000</p>
+                </div>
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-icon" aria-label="Keamanan" style="color:#B693CE;">
+                        <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true" stroke="#B693CE" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 5c-4 3-9 4-9 4v6c0 7 7 11 9 12 2-1 9-5 9-12V9s-5-1-9-4z" fill="#E6D5F0"
+                                stroke="#B693CE" />
+                            <path d="M16 15v5M16 20v2" stroke="#7B5BA3" />
+                            <circle cx="16" cy="15" r="2" fill="#FFF" stroke="#F4A6D3" />
+                        </svg>
+                    </div>
+                    <h3>Keamanan ISO 27001</h3>
+                    <p>Compliance penuh dengan standar keamanan internasional dan pemerintah Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Dampak Nyata</h2>
+            <p class="section-subtitle animate-on-scroll">Bersama membangun keluarga Indonesia yang lebih bahagia</p>
+
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="29.99">0</div>
+                    <div class="stat-label">Angka Perceraian Kaltim</div>
+                    <div class="stat-description">Peringkat 2 tertinggi di Kalimantan</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="34">0</div>
+                    <div class="stat-label">KUA Terintegrasi</div>
+                    <div class="stat-description">Se-Kalimantan Timur</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Target Pengguna</div>
+                    <div class="stat-description">Pasangan calon pengantin</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="section-title animate-on-scroll">Mulai Perjalanan Anda</h2>
+                <p class="section-subtitle animate-on-scroll">Bergabunglah dengan ribuan pasangan yang telah mempercayai
+                    EtamKawin untuk perjalanan pernikahan mereka</p>
+
+                <div class="cta-buttons">
+                    <a href="#" class="btn">Download Aplikasi</a>
+                    <a href="#" class="btn">Hubungi Kami</a>
+                </div>
+
+                <div class="qr-code animate-on-scroll">
+                    <div class="qr-code-placeholder">Scan QR Code untuk akses langsung</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EtamKawin</h3>
+                <p>Platform Digital Terpadu untuk Administrasi &amp; Persiapan Pernikahan</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/etamkawin" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <svg width="22" height="22" viewBox="0 0 24 24" stroke="#E197B4" stroke-width="2" fill="none"
+                            aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="#F4A6D3" />
+                            <circle cx="12" cy="12" r="5" fill="#fff" stroke="#E197B4" />
+                            <circle cx="17.5" cy="6.5" r="1.3" fill="#B693CE" />
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@etamkawin" target="_blank" class="social-link" aria-label="TikTok">
+                        <svg width="22" height="22" viewBox="0 0 24 24" stroke="#D4AF37" stroke-width="2" fill="none"
+                            aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="#FFF8E1" />
+                            <path
+                                d="M9 17c-1.657 0-3-1.343-3-3s1.343-3 3-3c.26 0 .516.034.76.1V6h2v4.118a3 3 0 1 1-.76 5.882z"
+                                fill="#fff" stroke="#D4AF37" />
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/EtamKawin" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg width="22" height="22" viewBox="0 0 24 24" stroke="#7B5BA3" stroke-width="2" fill="none"
+                            aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="#E6D5F0" />
+                            <path
+                                d="M13 17v-4h2.5l.5-3H13V8.5c0-.6.332-.9 1-.9H16V5.43C15.7 5.34 15 5 14 5c-2 0-3 1.079-3 3.05V10H8v3h3v4h2z"
+                                fill="#fff" stroke="#7B5BA3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p style="display:flex;align-items:center;gap:0.6em;"><span aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" stroke="#7B5BA3" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="16" height="12" rx="3" fill="#F4A6D3" />
+                            <path d="M2 4l8 7 8-7" stroke="#7B5BA3" />
+                        </svg>
+                    </span> info@etamkawin.id</p>
+                <p style="display:flex;align-items:center;gap:0.6em;"><span aria-label="Phone">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" stroke="#D4AF37" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="2" width="14" height="16" rx="3" fill="#FFF8E1" />
+                            <path d="M8 16h4M10 5v5m0 0l2-2m-2 2l-2-2" stroke="#D4AF37" />
+                        </svg>
+                    </span> +62-541-742198</p>
+                <p style="display:flex;align-items:center;gap:0.6em;"><span aria-label="Location">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" stroke="#B693CE" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="10" cy="8" rx="4" ry="5" fill="#E6D5F0" />
+                            <path d="M10 18c-3-3-7-7-7-10a7 7 0 0 1 14 0c0 3-4 7-7 10z" stroke="#7B5BA3" />
+                            <circle cx="10" cy="8" r="2" fill="#fff" stroke="#E197B4" />
+                        </svg>
+                    </span> Jl. Ir. H. Juanda No. 15, Samarinda, Kalimantan Timur</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tautan Cepat</h3>
+                <a href="#about">Tentang Kami</a>
+                <a href="#features">Fitur</a>
+                <a href="#advantages">Keunggulan</a>
+                <a href="#cta">Download</a>
+            </div>
+            <div class="footer-section">
+                <h3>Organisasi</h3>
+                <p>BRIDA Kalimantan Timur</p>
+                <p>Universitas Muhammadiyah Kalimantan Timur</p>
+                <p>&copy; 2025 EtamKawin</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Dikembangkan dengan ❤️ untuk keluarga Indonesia yang lebih bahagia</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle">Fitur Detail</h2>
+            <p id="modalDescription">Deskripsi fitur akan muncul di sini.</p>
+        </div>
+    </div>
+
+    <script>
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter Animation
+        function animateCounter(element, target, duration = 2000) {
+            let current = 0;
+            const increment = target / (duration / 16);
+            const isDecimal = target % 1 !== 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = isDecimal ? target.toFixed(2) + '%' : (target >= 100 ? target + 'K+' : target);
+                    clearInterval(timer);
+                } else {
+                    element.textContent = isDecimal ? current.toFixed(2) + '%' : Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseFloat(stat.dataset.target);
+                        animateCounter(stat, target);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const statsSection = document.querySelector('.statistics');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Modal functionality
+        const modal = document.getElementById('featureModal');
+        const modalClose = document.querySelector('.modal-close');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+
+        const featureDetails = {
+            'taaruf': {
+                title: 'Ta\'aruf Digital',
+                description: 'Platform pencarian pasangan yang aman dan terpercaya. Fitur ini dilengkapi dengan verifikasi identitas melalui integrasi Dukcapil, algoritma matching berdasarkan kesamaan nilai dan tujuan hidup, serta sistem privasi berlapis untuk melindungi informasi pribadi Anda. Setiap pengguna diverifikasi untuk memastikan keaslian profil.'
+            },
+            'edukasi': {
+                title: 'Edukasi Pranikah',
+                description: 'Program edukasi pranikah terstruktur dengan 5 modul utama: Literasi Finansial (perencanaan keuangan keluarga), Komunikasi Efektif (resolusi konflik dan ekspresi emosi), Kesehatan Reproduksi (kesehatan fisik dan mental), Hukum Pernikahan (hak dan kewajiban), serta Nilai Budaya (tradisi dan agama). Semua materi berbasis evidence-based practice.'
+            },
+            'vendor': {
+                title: 'Vendor Marketplace',
+                description: 'Ekosistem lengkap vendor pernikahan yang telah terverifikasi. Mulai dari fotografer, dekorasi, catering, hingga wedding organizer - semua dalam satu platform. Sistem booking dengan escrow payment melindungi transaksi Anda, dilengkapi dengan review autentik dari pengguna sebelumnya dan integrasi pembayaran yang aman.'
+            },
+            'kartu': {
+                title: 'Kartu Nikah Digital Blockchain',
+                description: 'Sertifikat pernikahan digital yang tersimpan dalam blockchain Hyperledger Fabric, menjamin keamanan dan keaslian data. Dilengkapi QR code untuk verifikasi instan, anti-pemalsuan, dan diakui secara internasional. Kartu nikah digital Anda akan tersimpan selamanya dan dapat diakses kapan saja, di mana saja.'
+            }
+        };
+
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const featureType = card.dataset.feature;
+                const detail = featureDetails[featureType];
+
+                if (detail) {
+                    modalTitle.textContent = detail.title;
+                    modalDescription.textContent = detail.description;
+                    modal.classList.add('active');
+                }
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#cta') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+
+</html>
